@@ -1,6 +1,6 @@
 from pymongo import MongoClient
-from Preprocessing import Counting_class, Spanish_corpus
-from Preprocessing.Tags import DbTags
+from rap.preprocessing import Counting_class, Spanish_corpus
+from rap.preprocessing.Tags import DbTags
 import string
 
 CLIENT = MongoClient("localhost", 27017)

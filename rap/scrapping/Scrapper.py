@@ -1,15 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 import logging
-import os.path as path
 import re
 import sys
 
 TIPO_ARCHIVO = ".txt"
-PATH_LETRA_CANCIONES = "Scrapping/letra_canciones/"
-PATH_ARCHIVO_CANCIONES = "Scrapping/archivos_canciones/"
+PATH_LETRA_CANCIONES = "scrapping/letra_canciones/"
+PATH_ARCHIVO_CANCIONES = "scrapping/archivos_canciones/"
 
-estilo = sys.argv[2]
+# estilo = sys.argv[2]
 
 logging.basicConfig(level=logging.INFO)
 
@@ -54,14 +53,14 @@ def clean_text_of_soup(nombre_del_cantante, text_of_soup):
     return text_without_numbers.split("Agregar a la playlist")[0].rstrip()
 
 
-def save_to_file(nombre_del_cantante, texto_de_la_cancion):
-
-    """ Esta función toma tanto el nombre del cantante, como el texto de una sopa y la guarda en un archivo,
-    del que cuenta las palabras, y las devuelve para el contador """
-    with open(PATH_LETRA_CANCIONES + estilo + "/" + nombre_del_cantante + TIPO_ARCHIVO, "a") as text_file:
-
-        text_file.write(texto_de_la_cancion)
-        text_file.write("\n")
+# def save_to_file(nombre_del_cantante, texto_de_la_cancion):
+#
+#     """ Esta función toma tanto el nombre del cantante, como el texto de una sopa y la guarda en un archivo,
+#     del que cuenta las palabras, y las devuelve para el contador """
+#     with open(PATH_LETRA_CANCIONES + estilo + "/" + nombre_del_cantante + TIPO_ARCHIVO, "a") as text_file:
+#
+#         text_file.write(texto_de_la_cancion)
+#         text_file.write("\n")
 
 
 def get_text_from_letras_com_soup(nombre_del_cantante, url):
@@ -72,9 +71,3 @@ def get_text_from_letras_com_soup(nombre_del_cantante, url):
     text_of_soup = soup.find("div", class_="cnt-letra p402_premium").get_text(" ").lstrip()
 
     return save_to_file(nombre_del_cantante, text_of_soup)
-
-    
-
-
-
-

@@ -2,13 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b640780-543a-48ef-b65c-e0143ac8eae8" name="Default" comment="&quot;Cambios en el workspace&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/Generator/Generator.py" afterPath="$PROJECT_DIR$/src/Generator/Generator.py" />
-      <change beforePath="$PROJECT_DIR$/src/albums.json" afterPath="$PROJECT_DIR$/src/albums.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/Rap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Rap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.ipynb_checkpoints/Prototipado-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Generator/Generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preprocessing/Counting_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preprocessing/Database_ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preprocessing/Spanish_corpus.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preprocessing/Spider_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preprocessing/Style_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preprocessing/Tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/Scrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Flamenco/Andy_Lucas_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Flamenco/Delincuentes_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Flamenco/El_barrio_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Flamenco/El_bicho_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Flamenco/Estopa_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Flamenco/Fondo_flamenco_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Flamenco/Ketama_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Indie/Lori_Meyers_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Indie/Love_of_lesbian_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Indie/Piratas_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Indie/Second_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Indie/Sidonie_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Indie/Supersubmarina_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Indie/Vetusta_morla_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Latino/Coti_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Latino/Daddy_Yankee_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Latino/Don_Omar_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Latino/Juanes_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Latino/Julieta_Venegas_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Latino/Luis_Fonsi_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Latino/Paulina_Rubio_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop/Alejandro_Sanz_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop/Amaral_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop/Bisbal_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop/Bustamante_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop/ECDL_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop/Maldita_Nerea_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop/Pereza_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rap/Chojin_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rap/Haze_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rap/Mala_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rap/Nach_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rap/SFDK_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rap/Tote_king_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rap/Violadores_del_verso_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rock/Boikot_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rock/Extremoduro_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rock/Fito_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rock/La_Fuga_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rock/M_clan_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rock/Mago_de_oz_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Rock/Marea_canciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Flamenco/Andy_Lucas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Flamenco/Delincuentes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Flamenco/El_barrio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Flamenco/El_bicho.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Flamenco/Estopa.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Flamenco/Fondo_flamenco.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Flamenco/Ketama.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Indie/Lori_Meyers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Indie/Love_of_lesbian.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Indie/Piratas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Indie/Second.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Indie/Sidonie.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Indie/Supersubmarina.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Indie/Vetusta_morla.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Latino/Coti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Latino/Daddy_Yankee.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Latino/Don_Omar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Latino/Juanes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Latino/Julieta_Venegas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Latino/Luis_Fonsi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Latino/Paulina_Rubio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Pop/Alejandro_Sanz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Pop/Amaral.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Pop/Bisbal.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Pop/Bustamante.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Pop/ECDL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Pop/Maldita_Nerea.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Pop/Pereza.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap/Chojin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap/Haze.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap/Mala.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap/Nach.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap/SFDK.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap/Tote_king.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap/Violadores_del_verso.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock/Boikot.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock/Extremoduro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock/Fito.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock/La_Fuga.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock/M_clan.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock/Mago_de_oz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock/Marea.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visualization/ArtistVisualization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visualization/StyleVisualization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visualization/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/albums.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +149,9 @@
         <entry key="$PROJECT_DIR$" value="origin/develop" />
       </map>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.cache/JetBrains/PyCharmCE2022.2/python_stubs/-793166469/builtins.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,13 +210,19 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="74" />
     <option name="y" value="27" />
     <option name="width" value="1064" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2IQFdsIJzmhelQuxntSy5M04NXW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -167,36 +270,32 @@
       <pane id="Scratches" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;
+  }
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Rap/resources" />
       <recent name="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rap" />
       <recent name="$PROJECT_DIR$/src/Scrapping/letra_canciones/Rock" />
       <recent name="$PROJECT_DIR$/src/Scrapping/archivos_canciones" />
       <recent name="$PROJECT_DIR$/src/Visualization" />
-      <recent name="$PROJECT_DIR$/src/Preprocessing" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Scrapping/archivos_canciones/Pop" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="MongoReader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Rap" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -207,14 +306,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Rap" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Visualization/MongoReader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="MongoWriter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Rap" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -225,14 +327,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Rap" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Scrapping/MongoWriter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+      <module name="Rap" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -243,14 +348,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Rap" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
       <option name="PARAMETERS" value="Fito Rock" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="main_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Rap" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -261,31 +369,31 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Rap" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Preprocessing/main_preprocessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MongoWriter" />
-      <item index="2" class="java.lang.String" itemvalue="Python.MongoReader" />
-      <item index="3" class="java.lang.String" itemvalue="Python.main_preprocessing" />
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.MongoWriter" />
+      <item itemvalue="Python.MongoReader" />
+      <item itemvalue="Python.main_preprocessing" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.main_preprocessing" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MongoReader" />
-        <item index="2" class="java.lang.String" itemvalue="Python.MongoWriter" />
-        <item index="3" class="java.lang.String" itemvalue="Python.main" />
+      <list>
+        <item itemvalue="Python.main_preprocessing" />
+        <item itemvalue="Python.MongoReader" />
+        <item itemvalue="Python.MongoWriter" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -344,29 +452,11 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Cambios en el workspace&quot;" />
@@ -388,7 +478,6 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="117" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">

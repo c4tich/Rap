@@ -1,13 +1,13 @@
 from wordcloud import WordCloud, STOPWORDS
-from Preprocessing.Tags import DbTags
-from Preprocessing import Database_ops
+from rap.preprocessing.Tags import DbTags
+from rap.preprocessing import Database_ops
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
 stopwords = set(STOPWORDS)
 fig = plt.figure(1, figsize=(12, 12))
-ESTILOS = ["Flamenco", "Indie", "Latino", "Pop", "Rock", "Rap"]
+ESTILOS = ["Flamenco", "Indie", "Latino", "Pop", "Rock", "rap"]
 columns = ['_id', 'max_words_per_song', 'min_words_per_song', 'number_of_albums', 'number_of_songs',
            'number_of_stopwords', 'percentage_of_relevant_words', 'text_no_sw', 'text_raw', 'unique_words',
            'word_average_per_song', "style"]

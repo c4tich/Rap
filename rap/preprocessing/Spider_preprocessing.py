@@ -1,4 +1,4 @@
-from Preprocessing.Tags import DbTags
+from rap.preprocessing.Tags import DbTags
 
 
 def df_cleaning(df):

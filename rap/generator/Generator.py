@@ -1,6 +1,8 @@
 import os
 import markovify
 
+from rap import BASE_PATH
+
 
 def print_song(path):
 
@@ -16,7 +18,7 @@ def print_song(path):
 
 def generar_cancion(estilo, cantante=""):
 
-    base_path = "/home/pablojimenez/PycharmProjects/Rap/src/Scrapping/letra_canciones/" + estilo + "/"
+    base_path = os.path.join(BASE_PATH, "/scrapping/letra_canciones", estilo, "/")
     singer_path = base_path + cantante + ".txt"
 
     if cantante == "":

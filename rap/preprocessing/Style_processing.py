@@ -1,5 +1,5 @@
-from Preprocessing import Database_ops
-from Preprocessing.Tags import DbTags
+from rap.preprocessing import Database_ops
+from rap.preprocessing.Tags import DbTags
 
 
 def consolidate_style(collection, estilo, collection_to_save):
