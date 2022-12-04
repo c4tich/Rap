@@ -1,3 +1,3 @@
 import os
 
-BASE_PATH = os.path.realpath(__file__)
+BASE_PATH = "/".join(os.path.realpath(__file__).split("/")[:-1])
