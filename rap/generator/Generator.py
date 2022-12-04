@@ -18,19 +18,17 @@ def print_song(path):
 
 def generar_cancion(estilo, cantante=""):
 
-    base_path = os.path.join(BASE_PATH, "/scrapping/letra_canciones", estilo, "/")
-    singer_path = base_path + cantante + ".txt"
+    base_path = os.path.join(BASE_PATH, "resources/letra_canciones", estilo)
+    singer_path = os.path.join(base_path, f"{cantante}.txt")
 
     if cantante == "":
-
-        with open(base_path + estilo + "temp.txt", "a") as fileEnd:
+        temp_path = os.path.join(base_path, estilo, "temp.txt")
+        with open(temp_path, "a") as fileEnd:
             for file in os.listdir(base_path):
-                with open(base_path + file, "r") as fileRead:
+                with open(os.path.join(base_path, file), "r") as fileRead:
                     illo = fileRead.read()
                     fileEnd.write(illo)
 
-        print_song(base_path + estilo + "temp.txt")
-
+        print_song(temp_path)
     else:
-
         print_song(singer_path)
