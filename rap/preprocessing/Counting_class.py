@@ -9,7 +9,7 @@ def count_total_number_of_words(file_path):
 
 def calculate_average_per_song(dictionary, number_of_songs):
     """Calcula la media de palabras por cancion"""
-    return len(dictionary)/number_of_songs
+    return len(dictionary) / number_of_songs
 
 
 def calculate_number_of_stopwords(dictionary_with_sw, dictionary_wo_sw):

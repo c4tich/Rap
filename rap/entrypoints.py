@@ -40,12 +40,32 @@ def generate(style: str, artist: str) -> None:
 
 
 @click.command()
-@click.option("--style", type=click.STRING, required=False, default=None, help="Style of the song to be written")
-@click.option("--artist", type=click.STRING, required=False, default=None, help="Artist of the song to be written")
-@click.option("--write-style", type=click.BOOL, is_flag=True,
-              help="Whether or not to write a song based on the specified style")
-@click.option("--write-artist", type=click.BOOL, is_flag=True,
-              help="Whether or not to write a song based on the specified artist")
+@click.option(
+    "--style",
+    type=click.STRING,
+    required=False,
+    default=None,
+    help="Style of the song to be written",
+)
+@click.option(
+    "--artist",
+    type=click.STRING,
+    required=False,
+    default=None,
+    help="Artist of the song to be written",
+)
+@click.option(
+    "--write-style",
+    type=click.BOOL,
+    is_flag=True,
+    help="Whether or not to write a song based on the specified style",
+)
+@click.option(
+    "--write-artist",
+    type=click.BOOL,
+    is_flag=True,
+    help="Whether or not to write a song based on the specified artist",
+)
 def write(style: str, artist: str, write_style: bool, write_artist: bool) -> None:
     """
     Writes songs based on artist or style
@@ -63,8 +83,12 @@ def write(style: str, artist: str, write_style: bool, write_artist: bool) -> Non
     # equivalent to checkpoint=cantante
     if write_style is None and write_artist is not None:
 
-        songs_file = os.path.join(Scrapper.PATH_ARCHIVO_CANCIONES, style, artist, "_canciones.txt")
-        output_path = os.path.join(Scrapper.PATH_LETRA_CANCIONES, style, artist, Scrapper.TIPO_ARCHIVO)
+        songs_file = os.path.join(
+            Scrapper.PATH_ARCHIVO_CANCIONES, style, artist, "_canciones.txt"
+        )
+        output_path = os.path.join(
+            Scrapper.PATH_LETRA_CANCIONES, style, artist, Scrapper.TIPO_ARCHIVO
+        )
         lista_url_de_canciones = Scrapper.get_urls_from_songs_file(songs_file)
 
         if os.path.exists(output_path):
@@ -78,7 +102,7 @@ def write(style: str, artist: str, write_style: bool, write_artist: bool) -> Non
             os.path.join(Scrapper.PATH_LETRA_CANCIONES, style, artist, ".txt"),
             artist,
             style,
-            n_albums
+            n_albums,
         )
 
     # equivalent to checkpoint=estilo
@@ -95,8 +119,20 @@ def write(style: str, artist: str, write_style: bool, write_artist: bool) -> Non
 
 
 @click.command()
-@click.option("--style", type=click.STRING, required=False, default=None, help="Style of the song to be read")
-@click.option("--artist", type=click.STRING, required=False, default=None, help="Artist of the song to be read")
+@click.option(
+    "--style",
+    type=click.STRING,
+    required=False,
+    default=None,
+    help="Style of the song to be read",
+)
+@click.option(
+    "--artist",
+    type=click.STRING,
+    required=False,
+    default=None,
+    help="Artist of the song to be read",
+)
 def read(style: str, artist: str) -> None:
     """
     Reads an already written song
@@ -118,14 +154,16 @@ def read(style: str, artist: str) -> None:
 
         # 2. Segunda visualización: SpiderPlot
         # maybe use clean_data instead of data?
-        data_spider = clean_data[clean_data["_id"] == artist][[
-            DbTags.id, DbTags.text_raw, DbTags.text_no_sw, DbTags.unique_words]
+        data_spider = clean_data[clean_data["_id"] == artist][
+            [DbTags.id, DbTags.text_raw, DbTags.text_no_sw, DbTags.unique_words]
         ]
         ArtistVisualization.show_spider_graph(data_spider)
 
     elif style is not None and artist is None:
         # 1. Primera visualización: WordCloud
-        data_cloud = clean_data[clean_data[DbTags.id] == style][DbTags.text_no_sw].values
+        data_cloud = clean_data[clean_data[DbTags.id] == style][
+            DbTags.text_no_sw
+        ].values
         StyleVisualization.show_wordcloud(data_cloud)
 
         # 2. Segunda visualización: Graficos comparativos
@@ -133,14 +171,18 @@ def read(style: str, artist: str) -> None:
         StyleVisualization.compare_artists(data, style)
 
         # 3. Tercera visualización: Queso de discos
-        n_albums_artistas = data[data[DbTags.id] != style][DbTags.number_of_albums].values
+        n_albums_artistas = data[data[DbTags.id] != style][
+            DbTags.number_of_albums
+        ].values
         nombres_artistas = data[data[DbTags.id] != style][DbTags.id].values
 
         StyleVisualization.piechart(n_albums_artistas, nombres_artistas)
 
 
 @click.command()
-@click.option("--feature-tag", type=click.STRING, required=True, help="Tag to visualize")
+@click.option(
+    "--feature-tag", type=click.STRING, required=True, help="Tag to visualize"
+)
 def project_visualization(feature_tag: str) -> None:
     """
     Visualizes an existing project

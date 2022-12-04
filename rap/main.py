@@ -26,5 +26,5 @@ main.add_command(read, "read"),
 main.add_command(project_visualization, "project-visualization"),
 main.add_command(write, "write")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

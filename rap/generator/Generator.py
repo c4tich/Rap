@@ -23,15 +23,14 @@ def generar_cancion(estilo, cantante=""):
 
     if cantante == "":
 
-        with open(base_path + estilo + 'temp.txt', 'a') as fileEnd:
+        with open(base_path + estilo + "temp.txt", "a") as fileEnd:
             for file in os.listdir(base_path):
-                with open(base_path + file, 'r') as fileRead:
+                with open(base_path + file, "r") as fileRead:
                     illo = fileRead.read()
                     fileEnd.write(illo)
 
-        print_song(base_path + estilo + 'temp.txt')
+        print_song(base_path + estilo + "temp.txt")
 
     else:
 
         print_song(singer_path)
-

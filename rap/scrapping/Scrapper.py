@@ -37,8 +37,7 @@ def get_text_from_url(nombre_del_cantante, url):
     con el propósito de obtener una sopa en BeautifulSoup, para llamar a save_to_file"""
 
     sopa_de_la_cancion = get_soup_from_url(url)
-    texto_de_la_sopa = sopa_de_la_cancion.find("div", id="cnt-letra p402_premium")\
-
+    texto_de_la_sopa = sopa_de_la_cancion.find("div", id="cnt-letra p402_premium")
     for tag in texto_de_la_sopa:
         return save_to_file(nombre_del_cantante, tag.text)
 
@@ -68,6 +67,8 @@ def get_text_from_letras_com_soup(nombre_del_cantante, url):
     """Función para guardar las letras de un artista en un archivo"""
 
     soup = get_soup_from_url(url)
-    text_of_soup = soup.find("div", class_="cnt-letra p402_premium").get_text(" ").lstrip()
+    text_of_soup = (
+        soup.find("div", class_="cnt-letra p402_premium").get_text(" ").lstrip()
+    )
 
     return save_to_file(nombre_del_cantante, text_of_soup)

@@ -30,7 +30,7 @@ def show_spider_graph(data):
     ax.plot(angles, values)
 
     # Fill in the area plotted in the last line
-    ax.fill(angles, values, 'teal', alpha=0.1)
+    ax.fill(angles, values, "teal", alpha=0.1)
 
     # Give the plot a title and show it
     ax.set_title(name_of_band)

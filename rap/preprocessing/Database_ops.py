@@ -38,12 +38,16 @@ def file_to_mongo(file_path, artist_name, estilo, n_albums=1):
 
         max_song, min_song = (max(length_list), min(length_list))
 
-        no_punctuation_file = ["".join(caracter for caracter in word if caracter
-                                       not in string.punctuation) for word in split_file]
+        no_punctuation_file = [
+            "".join(caracter for caracter in word if caracter not in string.punctuation)
+            for word in split_file
+        ]
 
         number_of_songs = len(reader.split("\n")) - 1
 
-        word_average_per_song = Counting_class.calculate_average_per_song(no_punctuation_file, number_of_songs)
+        word_average_per_song = Counting_class.calculate_average_per_song(
+            no_punctuation_file, number_of_songs
+        )
 
         counted_dictionary_raw = len(no_punctuation_file)
 
@@ -67,7 +71,7 @@ def file_to_mongo(file_path, artist_name, estilo, n_albums=1):
             tags.percentage_of_relevant_words: percentage,
             tags.max_words_per_song: max_song,
             tags.min_words_per_song: min_song,
-            tags.number_of_albums: n_albums
+            tags.number_of_albums: n_albums,
         }
 
         set_style_collection(estilo).insert(final_dictionary)
